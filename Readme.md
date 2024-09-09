@@ -23,12 +23,11 @@ We propose a novel localization-based  CAC approach, termed Scale-modulated Quer
 
 ## Evaluation on Datasets
 
-Result on FSC-147 dataset:
+Result on FSC-147 dataset & Checkpoint:
 
-| Val MAE | Val MSE | Test MAE | Test MSE | 
-| :-----: | :-----: | :------: | :------: |
-|  12.40    |  42.30    |   12.49    |   80.8    | 
-<!-- [Checkpoint]() | -->
+| Val MAE | Val MSE | Test MAE | Test MSE | Checkpoint |
+| :-----: | :-----: | :------: | :------: | :--------: |
+|  12.40    |  42.30    |   12.49    |   80.8    |  [Download](https://drive.google.com/file/d/19t8etURqM5Qch97q-Rn5ySXd9jDAoj5g/view?usp=sharing) |
 
 Result on CARPK dataset:
 
@@ -45,8 +44,16 @@ Result on CARPK dataset:
 |                        |  SAFECount  |  5.33 |  7.04 |
 |                        | SQLNet(ours) |  4.89 |  6.55 |
 
+## Test
+
+``` shell
+python test.py --vis --data_path /path/to/dataset --model_path ./path/to/pretrain_weight.pth
+```
+
+
+Note: Backbone(Resnet50) pre-trained parameters are automatically loaded and only part of them will be used by our model.
+
 ## Code
 
-To be released soon.
-
-
+* [x] Test code & Pre-trained model
+* [ ] Training code
