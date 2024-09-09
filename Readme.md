@@ -8,6 +8,8 @@ We propose a novel localization-based  CAC approach, termed Scale-modulated Quer
 
 ## Qualitative Results
 
+The three columns are ground truth, predicted target points and predicted target bounding boxes.
+
 ![image1](asserts/example(1).png)
 ![image2](asserts/example(2).png)
 ![image3](asserts/example(3).png)
